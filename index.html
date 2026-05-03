@@ -4,508 +4,335 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Rohan Talaviya - Personal Portfolio Website" />
-    <meta name="keywords" content="Rohan Talaviya, resume" />
+    <meta name="description"
+        content="Rohan Talaviya — Data Scientist & Machine Learning Engineer. Portfolio showcasing AI, ML, and data science projects." />
+    <meta name="keywords" content="Rohan Talaviya, Data Scientist, Machine Learning, AI Engineer, Portfolio" />
     <meta name="author" content="Rohan Talaviya" />
-    <title>Rohan Talaviya - Portfolio</title>
-
-
-    <!--main css file should not be removed -->
+    <title>Rohan Talaviya — Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/index.css">
-    <!--main css file-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
 </head>
 
 <body>
-    <!--contains all the div-->
     <div id="all">
-        <!--mouse  follower-->
-        <div class="cursor"></div>
-        <!--mouse  follower-->
-        <!--loader-->
+
+        <!-- Loader -->
         <div id="loader">
-            <span class="color">Rohan</span>Talaviya
+            <span class="loader-name">Rohan<span class="accent">.</span></span>
         </div>
-        <!--loader-end-->
-        <!--link-screen-->
-        <div id="breaker">
-        </div>
-        <div id="breaker-two">
-        </div>
-        <!--link-screen-->
-        <!--Main-Section-->
-        <!--Navigator-fullscreen-->
-        <div id="navigation-content">
-            <div class="logo">
 
-            </div>
-            <div class="navigation-close">
-                <span class="close-first"></span>
-                <span class="close-second"></span>
-            </div>
-            <div class="navigation-links">
-                <a href="#" data-text="HOME" id="home-link">HOME</a>
-                <a href="#" data-text="ABOUT" id="about-link">ABOUT</a>
-                <a href="#" data-text="PROJECTS" id="blog-link">PROJECTS</a>
-            </div>
-        </div>
-        <!--Navigator-Fullscreen END-->
-        <!--Home Page-->
-        <!--Menubar-->
+        <!-- Page Transition Overlay -->
+        <div id="breaker"></div>
+        <div id="breaker-two"></div>
+
+        <!-- Navigation Bar -->
         <div id="navigation-bar">
-
-            <div class="menubar">
-                <span class="first-span"></span>
-                <span class="second-span"></span>
-                <span class="third-span"></span>
-            </div>
+            <nav class="nav-links">
+                <a href="#" id="home-link">Home</a>
+                <a href="#" id="about-link">About</a>
+                <a href="#" id="blog-link">Projects</a>
+            </nav>
         </div>
-        <!--Menubar End-->
-        <!--Header-->
+
+        <!-- ===================== HOME / HERO ===================== -->
         <div id="header">
             <div id="particles"></div>
-            <!--Social Media Links-->
-            <div class="social-media-links">
-                <a href="https://github.com/RohanTalaviya10?tab=repositories"><img src="images/github icon.png"
-                        class="social-media"
-                        alt="instagram-logo"></a><!--Your instagram homepage link inser in place of "#"-->
-                <a href="https://www.kaggle.com/rohantalaviya"><img src="images/kaggle icon.png" class="social-media"
-                        alt="facebook-logo"></a>
-                <a href="https://www.linkedin.com/in/rohan-talaviya-642974179/"><img src="images/linkedin logo.png"
-                        class="social-media" alt="linkedin-logo"></a>
-                <a href="https://x.com/RohanTalaviya"><img src="images/twitter logo.png" class="social-media"
-                        alt="twitter-logo"></a>
 
+            <!-- Social Links — Left Side -->
+            <div class="social-media-links">
+                <a href="https://github.com/RohanTalaviya10?tab=repositories" target="_blank" rel="noopener">
+                    <img src="images/github icon.png" class="social-media" alt="GitHub">
+                </a>
+                <a href="https://www.kaggle.com/rohantalaviya" target="_blank" rel="noopener">
+                    <img src="images/kaggle icon.png" class="social-media" alt="Kaggle">
+                </a>
+                <a href="https://www.linkedin.com/in/rohan-talaviya-642974179/" target="_blank" rel="noopener">
+                    <img src="images/linkedin logo.png" class="social-media" alt="LinkedIn">
+                </a>
+                <a href="https://x.com/RohanTalaviya" target="_blank" rel="noopener">
+                    <img src="images/twitter logo.png" class="social-media" alt="X / Twitter">
+                </a>
             </div>
-            <!--Social Media Links end-->
+
+            <!-- Hero Content -->
             <div class="header-content">
                 <div class="header-content-box">
-                    <div class="firstline"><span class="color">Rohan </span>Talaviya</div>
-                    <div class="secondline">
-                        I'm a
-                        <span class="txt-rotate color" data-period="1200"
-                            data-rotate='[ " Data Scientist.", " Machine Learning Engineer.", " AI Engineer." ]'></span>
+                    <p class="hero-greeting">Hello, I'm</p>
+                    <h1 class="hero-name">Rohan Talaviya</h1>
+                    <div class="hero-title">
+                        <span class="txt-rotate" data-period="1500"
+                            data-rotate='["Data Scientist", "ML Engineer", "AI Engineer"]'></span>
                         <span class="slash">|</span>
                     </div>
-                    <div class="contact">
-                        <a href="Mailto:rohantalaviya10@gmail.com"><img src="images/mail.png" alt="email-pic"
-                                class="contactpic"></a>
-                        <a href="Tel:+917048175499"><img src="images/call.png" alt="phone-pic" class="contactpic"></a>
+                    <div class="hero-actions">
+                        <a href="Mailto:rohantalaviya10@gmail.com" class="hero-btn">
+                            <img src="images/mail.png" alt="Email" class="hero-icon"> Get in Touch
+                        </a>
+                        <a href="Rohan Data scientist Resume.pdf" download="Rohan_Talaviya.pdf"
+                            class="hero-btn hero-btn--outline">
+                            Download CV
+                        </a>
                     </div>
                 </div>
             </div>
-            <!--header image-->
-            <div class="header-image">
-                <!--<img src="images/man.jpg" alt="logo">-->
-            </div>
-            <!--header image end-->
         </div>
-        <!--Header End-->
-        <!--HomePage End-->
-        <!--Main-Section End-->
-        <!--about-->
+
+        <!-- ===================== ABOUT ===================== -->
         <div id="about">
-            <!--about content-->
             <div id="about-content">
-                <div class="about-header">
-                    About <span class="color">Me</span>
-                    <span class="header-caption">Get to Know <span class="color"> me.</span></span>
+
+                <!-- Section Header -->
+                <div class="section-header">
+                    <h2>About <span class="accent">Me</span></h2>
+                    <p class="section-subtitle">Get to know me</p>
                 </div>
+
+                <!-- Bio -->
                 <div class="about-main">
-                    <div class="about-first-paragraph wow">
-                        <!--about description-->
-                        <span class="about-first-line">
-                            I'm passionat
-                            <span class="color">data scientist</span>
-                            based in SURAT , INDIA </span>
-                        <br>
-                        <span class="about-second-line">I have 2.5 years of Android development experience and a
-                            transition into data science. Currently studying various data science topics due to an
-                            interest in the field, I have acquired the skills and knowledge necessary that required in
-                            data science. I enjoy every step while working.</span>
-                        <div class="cv">
-                            <a href="Rohan Data scientist Resume.pdf" download="Rohan_Talaviya.pdf"><button>Download
-                                    <span class="colors">CV</span></button></a>
-                        </div>
+                    <div class="about-text">
+                        <p class="about-lead">
+                            I'm a passionate <span class="accent">Data Scientist</span> based in Surat, India.
+                        </p>
+                        <p class="about-body">
+                            With 2.5 years of Android development experience and a successful transition into data
+                            science, I combine strong engineering fundamentals with modern ML/AI expertise. I enjoy
+                            every step of turning raw data into actionable insights.
+                        </p>
                     </div>
-                    <!--about picture-->
                     <div class="about-img">
-                        <img src="images/about.png" alt="Your Image">
+                        <img src="images/about.png" alt="Rohan Talaviya">
                     </div>
                 </div>
 
-            </div>
-            <!--services start-->
-            <div id="services">
-                <!--services header-->
-                <div class="services-heading wow">
-                    <span class="color">My</span> Services
-                </div>
-                <!--services header end-->
-                <!--services content-->
-                <div class="services-content">
-                    <div class="service-one service wow">
-                        <div class="service-img">
-                            <img src="images/coding.png" alt="service-one">
-                        </div>
-                        <div class="service-description">
-                            <h2>ML Model Development</h2>
+                <!-- Services -->
+                <div id="services">
+                    <div class="section-header">
+                        <h2>What I <span class="accent">Do</span></h2>
+                    </div>
+                    <div class="services-content">
+                        <div class="service">
+                            <div class="service-icon">
+                                <img src="images/coding.png" alt="ML">
+                            </div>
+                            <h3>ML Model Development</h3>
                             <p>Design, train, and deploy machine learning models tailored to business needs.</p>
                         </div>
-                    </div>
-                    <div class="service-two service wow">
-                        <div class="service-img">
-                            <img src="images/bulb.png" alt="service-two">
-                        </div>
-                        <div class="service-description">
-                            <h2>AI Solutions</h2>
-                            <p>Develop AI-based solutions for automation, natural language processing, or image
+                        <div class="service">
+                            <div class="service-icon">
+                                <img src="images/bulb.png" alt="AI">
+                            </div>
+                            <h3>AI Solutions</h3>
+                            <p>Develop AI-based solutions for automation, natural language processing, and image
                                 recognition.</p>
                         </div>
-                    </div>
-                    <div class="service-three service wow">
-                        <div class="service-img">
-                            <img src="images/android_icon.png" alt="service-three">
-                        </div>
-                        <div class="service-description">
-                            <h2>Android App Development</h2>
+                        <div class="service">
+                            <div class="service-icon">
+                                <img src="images/android_icon.png" alt="Android">
+                            </div>
+                            <h3>Android Development</h3>
                             <p>Build intuitive and user-friendly Android apps tailored to your needs.</p>
                         </div>
                     </div>
                 </div>
-            </div>
-            <!--services content end-->
-            <!--services end-->
-            <div id="skills">
-                <div class="skills-header">
-                    My <span class="color"> Skills</span>
-                </div>
-                <div class="skills-content">
-                    <div class="skill-category">
-                        <div class="category-title"><span class="color">Machine Learning</span></div>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <div class="skill-name">Supervised Learning (Regression, Classification)</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Unsupervised Learning (Clustering, Dimensionality Reduction)
-                                </div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Time Series Analysis & Forecasting</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Artificial Neural Networks</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Scikit-learn & XGBoost</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Feature Engineering & Selection</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Hyperparameter Tuning & Optimization</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Cross-Validation & Model Evaluation</div>
+
+                <!-- Skills -->
+                <div id="skills">
+                    <div class="section-header">
+                        <h2>My <span class="accent">Skills</span></h2>
+                    </div>
+                    <div class="skills-content">
+                        <div class="skill-group">
+                            <h4 class="skill-group-title">Machine Learning</h4>
+                            <div class="skill-tags">
+                                <span class="tag">Supervised Learning</span>
+                                <span class="tag">Unsupervised Learning</span>
+                                <span class="tag">Time Series Forecasting</span>
+                                <span class="tag">Neural Networks</span>
+                                <span class="tag">Scikit-learn</span>
+                                <span class="tag">XGBoost</span>
+                                <span class="tag">Feature Engineering</span>
+                                <span class="tag">Hyperparameter Tuning</span>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <div class="category-title"><span class="color">Deep Learning</span></div>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <div class="skill-name">PyTorch, TensorFlow & Keras</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Convolutional Neural Networks (CNN)</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Recurrent Neural Networks (RNN)</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Long Short-Term Memory (LSTM) & GRU</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Generative Adversarial Networks (GAN)</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Transformer Networks & BERT</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Autoencoders & Variational Autoencoders (VAE)</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Transfer Learning & Fine-tuning</div>
+                        <div class="skill-group">
+                            <h4 class="skill-group-title">Deep Learning</h4>
+                            <div class="skill-tags">
+                                <span class="tag">PyTorch</span>
+                                <span class="tag">TensorFlow</span>
+                                <span class="tag">CNN</span>
+                                <span class="tag">RNN / LSTM</span>
+                                <span class="tag">GANs</span>
+                                <span class="tag">Transformers / BERT</span>
+                                <span class="tag">Transfer Learning</span>
+                                <span class="tag">Autoencoders</span>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <div class="category-title"><span class="color">Data Science Libraries</span></div>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <div class="skill-name">Pandas & NumPy</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Scikit-learn & SciPy</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Matplotlib, Seaborn & Plotly</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">OpenCV & Scikit-image</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">NLTK & SpaCy (NLP)</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Statsmodels & Statistical Testing</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">LightGBM & CatBoost</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Hugging Face & Transformers</div>
+                        <div class="skill-group">
+                            <h4 class="skill-group-title">Data Science & Libraries</h4>
+                            <div class="skill-tags">
+                                <span class="tag">Pandas</span>
+                                <span class="tag">NumPy</span>
+                                <span class="tag">Matplotlib</span>
+                                <span class="tag">Seaborn</span>
+                                <span class="tag">Plotly</span>
+                                <span class="tag">OpenCV</span>
+                                <span class="tag">NLTK / SpaCy</span>
+                                <span class="tag">Hugging Face</span>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <div class="category-title"><span class="color">Mathematics & Statistics</span></div>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <div class="skill-name">Linear Algebra & Matrix Operations</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Probability Theory & Distributions</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Hypothesis Testing & Statistical Inference</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Regression Analysis & ANOVA</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Calculus & Optimization Theory</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Information Theory & Entropy</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Bayesian Statistics & Inference</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Time Series Analysis (ARIMA, SARIMA)</div>
+                        <div class="skill-group">
+                            <h4 class="skill-group-title">Mathematics & Statistics</h4>
+                            <div class="skill-tags">
+                                <span class="tag">Linear Algebra</span>
+                                <span class="tag">Probability</span>
+                                <span class="tag">Hypothesis Testing</span>
+                                <span class="tag">Regression Analysis</span>
+                                <span class="tag">Bayesian Inference</span>
+                                <span class="tag">ARIMA / SARIMA</span>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <div class="category-title"><span class="color">Databases & Data Engineering</span></div>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <div class="skill-name">SQL & Database Design</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">MySQL, PostgreSQL & SQLite</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">MongoDB & NoSQL Databases</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Big Data & Apache Spark</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Data Warehousing (Snowflake)</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">ETL & Data Pipelines</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Data Cleaning & Preprocessing</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">API Integration & REST</div>
+                        <div class="skill-group">
+                            <h4 class="skill-group-title">Databases & Engineering</h4>
+                            <div class="skill-tags">
+                                <span class="tag">SQL</span>
+                                <span class="tag">PostgreSQL</span>
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">Apache Spark</span>
+                                <span class="tag">Snowflake</span>
+                                <span class="tag">ETL Pipelines</span>
+                                <span class="tag">REST APIs</span>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <div class="category-title"><span class="color">Cloud & DevOps</span></div>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <div class="skill-name">AWS (EC2, S3, SageMaker, Lambda)</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Google Cloud Platform (GCP)</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Azure Machine Learning</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Docker & Containerization</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Git & GitHub Version Control</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Jupyter Notebooks & Google Colab</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">CI/CD Pipelines</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">MLflow & Model Registry</div>
+                        <div class="skill-group">
+                            <h4 class="skill-group-title">Cloud & DevOps</h4>
+                            <div class="skill-tags">
+                                <span class="tag">AWS</span>
+                                <span class="tag">GCP</span>
+                                <span class="tag">Azure ML</span>
+                                <span class="tag">Docker</span>
+                                <span class="tag">Git</span>
+                                <span class="tag">CI/CD</span>
+                                <span class="tag">MLflow</span>
                             </div>
                         </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <div class="category-title"><span class="color">Programming Languages</span></div>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <div class="skill-name">Python (Primary Language)</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">R for Statistical Analysis</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">SQL & PL/SQL</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Java & Kotlin</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">JavaScript & HTML/CSS</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Bash & Shell Scripting</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">XML & JSON</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="skill-category">
-                        <div class="category-title"><span class="color">Android Development</span></div>
-                        <div class="skill-items">
-                            <div class="skill-item">
-                                <div class="skill-name">Kotlin & Java</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Android SDK & Jetpack</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">XML & Layouts</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">MVVM & Clean Architecture</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Firebase & Real-time Database</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Backend API Integration</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Room Database & SQLite</div>
-                            </div>
-                            <div class="skill-item">
-                                <div class="skill-name">Unit Testing & Debugging</div>
+                        <div class="skill-group">
+                            <h4 class="skill-group-title">Languages</h4>
+                            <div class="skill-tags">
+                                <span class="tag">Python</span>
+                                <span class="tag">R</span>
+                                <span class="tag">SQL</span>
+                                <span class="tag">Java</span>
+                                <span class="tag">Kotlin</span>
+                                <span class="tag">JavaScript</span>
+                                <span class="tag">Bash</span>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!--about end-->
-        <!--blog-->
+
+        <!-- ===================== PROJECTS ===================== -->
         <div id="blog">
-            <div class="blog-header"> Project</span>
-                <span class="header-caption"> Some Of<span class="color"> My Work.</span></span>
+            <div class="section-header">
+                <h2>My <span class="accent">Projects</span></h2>
+                <p class="section-subtitle">Some of my work</p>
             </div>
             <div class="blog-content">
-                <div class="blogs">
-                    <a href="https://github.com/RohanTalaviya10/Recommender-Systems">
-                        <div class="img">
-                            <img src="images/recommendation_systems.png" alt="blog-one">
-                        </div>
-                        <div class="blog-text">
-                            <h3>Recommender Systems</h3>
-                            <p>Built collaborative and content-based recommendation models using matrix
-                                factorization and item embeddings; evaluated with ranking metrics and
-                                implemented production-ready pipelines.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="blogs">
-                    <a href="https://github.com/RohanTalaviya10/Predication-Projects">
-                        <div class="img">
-                            <img src="images/predicting_projects.png" alt="blog-two">
-                        </div>
-                        <div class="blog-text">
-                            <h3>Predication Projects</h3>
-                            <p>Implemented regression and forecasting solutions (time-series, ensemble
-                                models) with feature engineering, hyperparameter tuning, and robust
-                                evaluation.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="blogs">
-                    <a href="https://github.com/RohanTalaviya10/Data-Analyst-Projects">
-                        <div class="img">
-                            <img src="images/data_analyst_projects.png" alt="blog-three">
-                        </div>
-                        <div class="blog-text">
-                            <h3>Data Analyst Projects</h3>
-                            <p>Performed end-to-end data analysis: cleaning, exploratory analysis,
-                                visualization, and dashboarding using Pandas, Seaborn, and Plotly.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="blogs">
-                    <a href="https://github.com/RohanTalaviya10/Classification-Projects">
-                        <div class="img">
-                            <img src="images/classification_projects.png" alt="blog-four">
-                        </div>
-                        <div class="blog-text">
-                            <h3>Classification-Projects</h3>
-                            <p>Developed binary and multiclass classifiers using Logistic Regression,
-                                Random Forests, and neural networks with cross-validation and metric
-                                reporting.</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="blogs">
-                    <a href="https://github.com/RohanTalaviya10/Python-Projects">
-                        <div class="img">
-                            <img src="images/python_project.png" alt="blog-five">
-                        </div>
-                        <div class="blog-text">
-                            <h3>Python Projects</h3>
-                            <p>Collection of Python utilities and scripts for automation, web scraping,
-                                data processing, and small web tools; focused on clean, reusable code.</p>
-                        </div>
-                    </a>
-                </div>
+                <a href="https://github.com/RohanTalaviya10/Recommender-Systems" class="project-card" target="_blank"
+                    rel="noopener">
+                    <div class="project-img">
+                        <img src="images/recommendation_systems.png" alt="Recommender Systems">
+                    </div>
+                    <div class="project-info">
+                        <h3>Recommender Systems</h3>
+                        <p>Built collaborative and content-based recommendation models using matrix factorization and
+                            item embeddings.</p>
+                    </div>
+                </a>
+                <a href="https://github.com/RohanTalaviya10/Predication-Projects" class="project-card" target="_blank"
+                    rel="noopener">
+                    <div class="project-img">
+                        <img src="images/predicting_projects.png" alt="Prediction Projects">
+                    </div>
+                    <div class="project-info">
+                        <h3>Prediction Projects</h3>
+                        <p>Implemented regression and forecasting solutions with feature engineering, hyperparameter
+                            tuning, and robust evaluation.</p>
+                    </div>
+                </a>
+                <a href="https://github.com/RohanTalaviya10/Data-Analyst-Projects" class="project-card" target="_blank"
+                    rel="noopener">
+                    <div class="project-img">
+                        <img src="images/data_analyst_projects.png" alt="Data Analyst Projects">
+                    </div>
+                    <div class="project-info">
+                        <h3>Data Analyst Projects</h3>
+                        <p>End-to-end data analysis: cleaning, exploratory analysis, visualization, and dashboarding
+                            using Pandas, Seaborn, and Plotly.</p>
+                    </div>
+                </a>
+                <a href="https://github.com/RohanTalaviya10/Classification-Projects" class="project-card"
+                    target="_blank" rel="noopener">
+                    <div class="project-img">
+                        <img src="images/classification_projects.png" alt="Classification Projects">
+                    </div>
+                    <div class="project-info">
+                        <h3>Classification Projects</h3>
+                        <p>Developed binary and multiclass classifiers using Logistic Regression, Random Forests, and
+                            neural networks.</p>
+                    </div>
+                </a>
+                <a href="https://github.com/RohanTalaviya10/Python-Projects" class="project-card" target="_blank"
+                    rel="noopener">
+                    <div class="project-img">
+                        <img src="images/python_project.png" alt="Python Projects">
+                    </div>
+                    <div class="project-info">
+                        <h3>Python Projects</h3>
+                        <p>Collection of Python utilities and scripts for automation, web scraping, data processing, and
+                            small web tools.</p>
+                    </div>
+                </a>
             </div>
         </div>
 
-
     </div>
-    <!--all the divisions-->
+
     <script src="js/jquery.min.js"></script>
     <script src="js/particles.js"></script>
     <script src="js/particles.min.js"></script>
     <script src="js/index.js"></script>
-    <!--particles script-->
-    <script>
-        particlesJS("particles", { "particles": { "number": { "value": 40, "density": { "enable": true, "value_area": 800 } }, "color": { "value": "#ffffff" }, "shape": { "type": "circle", "stroke": { "width": 0, "color": "#000000" }, "polygon": { "nb_sides": 5 }, "image": { "src": "img/github.svg", "width": 100, "height": 100 } }, "opacity": { "value": 0.5, "random": false, "anim": { "enable": false, "speed": 1, "opacity_min": 0.1, "sync": false } }, "size": { "value": 3, "random": true, "anim": { "enable": false, "speed": 40, "size_min": 0.1, "sync": false } }, "line_linked": { "enable": true, "distance": 150, "color": "#ffffff", "opacity": 0.4, "width": 1 }, "move": { "enable": true, "speed": 6, "direction": "none", "random": false, "straight": false, "out_mode": "out", "bounce": false, "attract": { "enable": false, "rotateX": 600, "rotateY": 1200 } } }, "interactivity": { "detect_on": "canvas", "events": { "onhover": { "enable": true, "mode": "repulse" }, "onclick": { "enable": true, "mode": "push" }, "resize": true }, "modes": { "grab": { "distance": 400, "line_linked": { "opacity": 1 } }, "bubble": { "distance": 400, "size": 40, "duration": 2, "opacity": 8, "speed": 3 }, "repulse": { "distance": 200, "duration": 0.4 }, "push": { "particles_nb": 4 }, "remove": { "particles_nb": 2 } } }, "retina_detect": true });
-    </script>
 
+    <!-- Particles Config -->
+    <script>
+        particlesJS("particles", {
+            "particles": {
+                "number": { "value": 30, "density": { "enable": true, "value_area": 900 } },
+                "color": { "value": "#3b82f6" },
+                "shape": { "type": "circle" },
+                "opacity": { "value": 0.15, "random": true },
+                "size": { "value": 2.5, "random": true },
+                "line_linked": { "enable": true, "distance": 160, "color": "#3b82f6", "opacity": 0.08, "width": 1 },
+                "move": { "enable": true, "speed": 1.5, "direction": "none", "random": true, "straight": false, "out_mode": "out" }
+            },
+            "interactivity": {
+                "detect_on": "canvas",
+                "events": {
+                    "onhover": { "enable": true, "mode": "grab" },
+                    "onclick": { "enable": false },
+                    "resize": true
+                },
+                "modes": {
+                    "grab": { "distance": 200, "line_linked": { "opacity": 0.2 } }
+                }
+            },
+            "retina_detect": true
+        });
+    </script>
 </body>
 
 </html>
